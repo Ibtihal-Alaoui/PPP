@@ -1,38 +1,32 @@
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
 }
 
 .header-style{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 9vh;
     background-color: #5d4954;
-    font-family: 'Roboto', sans-serif;
+    height: 110px;
 }
 
 .header-style h1{
+    display: flex;
+    flex: 1;
     color:white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 70px;
-    padding-left: 145px;
+    font-size: 90px;
+    padding-left: 90px;
 }
 
 .lien{
     display: flex;
     justify-content: space-around;
-    width: 40%;
-    
+    flex: 1;
+    font-size: 25px;
+    align-self: center;
+    height: 20px;
+    cursor: pointer;
 }
 .lien a:link{
-     color: rgb(231, 231, 231);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-font-size: 17px;
+    color: white;
 }
 .lien a:hover{
     color: red;
@@ -55,14 +49,23 @@ font-size: 17px;
     
 }
 
-
-.imagehaut{
-    top: 3px;
-    left: 20px;
-    width: 2000px;
-    height: 350px;
+/* css pour JE DONNE*/
+input[type=text],select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    position: absolute;
 }
+
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    
+    }
+
