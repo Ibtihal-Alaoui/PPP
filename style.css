@@ -50,22 +50,28 @@
 }
 
 /* css pour JE DONNE*/
-input[type=text],select{
+
+    input[type=text],select{
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 10px;
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
-
-.container{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    display: flex;
+    .container{
+        color: bisque;
+        border-radius: 5px;
+        background-color: black;
+        padding:20px;
+        display: flex;
+        font-family: 'Hammersmith One', sans-serif;
+       
+        
+    }
+    body{
     
+        background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
     }
 
