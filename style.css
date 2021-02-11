@@ -4,7 +4,10 @@
 
 .header-style{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #5d4954;
+    font-family: 'Roboto', sans-serif;
     height: 110px;
 }
 
@@ -26,7 +29,11 @@
     
 }
 .lien a:link{
-    color: white;
+     color: rgb(231, 231, 231);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+font-size: 14px;
 }
 .lien a:hover{
     color: red;
