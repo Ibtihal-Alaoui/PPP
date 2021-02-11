@@ -1,31 +1,30 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 .header-style{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 9vh;
     background-color: #5d4954;
     font-family: 'Roboto', sans-serif;
-    height: 110px;
 }
 
 .header-style h1{
-    display: flex;
-    flex: 1;
     color:white;
-    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 70px;
     padding-left: 145px;
 }
 
 .lien{
     display: flex;
     justify-content: space-around;
-    flex: 1;
-    font-size: 25px;
-    align-self: center;
-    height: 20px;
+    width: 40%;
     
 }
 .lien a:link{
@@ -33,7 +32,7 @@
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-font-size: 14px;
+font-size: 17px;
 }
 .lien a:hover{
     color: red;
