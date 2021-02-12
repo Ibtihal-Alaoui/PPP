@@ -2,23 +2,74 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
         <link rel="stylesheet" href="./style.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        </head>
-        <body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+    </head>
 
-       <div class="contact-section" >
-<h1>Collecte</h1>
+    <header class="header-style-lien">
+        <div class="imagehaut">
+            <a href="index.html">
+                <img src="./5e7091a9-e12a-44a1-9c84-849bf8da59b5.jpg" height="100px" width="100px">
+            </a>
+        </div>
+        <div class="headd">
+            <h1 class="head">MEJMOU3IN</h1>
+        </div>
+    </header>    
 
-<form class ="contact-form" action="index.html" methode="post">
-    <input type="text" class="contact-form-text" placeholder="Entrez votre Nom">
-    <input type="text" class="contact-form-text" placeholder="Entrew votre Numero">
-    <input type="text" class="contact-form-text" placeholder="Entrez votre Ville">
-    <input type="text" class="contact-form-text" placeholder="Entrez votre Adresse">
-     <textarea class="contact-form-text" placeholder="Votre message "></textarea>
-     <input type="submit" class="contact-form-btn" value="Envoyer">
-</form>
-       </div>    
-        </body>
-        </html>
+    <body class="ASSOCIATION">
+        <div class="containerA">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="DON">
+                        <h1>COLLECTE</h1>
+                    </div>
+                    <div class="col-25">
+                        <label for="fname">Nom</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="nom" placeholder="Entrer votre nom..">
+                    </div>
+
+                    <div class="col-25">
+                        <label for="city">Ville</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="city" name="Ville" placeholder="Ville">
+                    </div>
+                
+                    <div class="col-25">
+                        <label for="address">Adresse</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="Adresse" placeholder="Adresse">
+                    </div>
+                
+                    <div class="col-25">
+                        <label for="tel">Numéro de téléphone</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="tel" name="Telephone" placeholder="Téléphone">
+                    </div>
+                   
+
+                    <div class="col-25">
+                        <label for="description">Description</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+                      </div>
+
+                    <div class="col-75">
+                        <input type="submit" value="submit">
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+    </body>
