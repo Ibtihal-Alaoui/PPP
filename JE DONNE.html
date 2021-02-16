@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Document</title>
+        <title>Je Donne</title>
         <link rel="stylesheet" href="./JEDONNE.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -86,9 +86,41 @@
                     <div class="col-75">
                         <input type="submit" id="submit" name="submit" value="ENVOYER">
                     </div>
+                    <span id="verify"></span>
                 
                 
             </form>
         </div>
-        <script src="./script.js"></script>
+        <script>
+    
+                var validation = document.getElementById('submit');
+                var nom=document.getElementById("fname");
+                var city=document.getElementById("city");
+                var Telephone=document.getElementById("Telephone");
+                var verify=document.getElementById("verify");
+                var textv=/^[a-zA-Zéèîï][a-zA-zéèîï]+([-'\s][a-zA-Zéèîï][a-zA-zéèîï]+)?/;
+                var numv=/^[1234567890]/;
+                validation.addEventListener('click',f_valid);
+     
+                
+                function f_valid(event){
+                   
+                     if(textv.test(nom.value) == false){
+                        event.preventDefault();
+                        verify.textContent="Vérifier vos informations s'il vous plaît !";
+                        verify.style.color='red';
+                         
+                    }else  if(textv.test(city.value) == false){
+                        event.preventDefault();
+                        verify.textContent="Vérifier vos informations s'il vous plaît !";
+                        verify.style.color='red';
+                }else  if(numv.test(Telephone.value) == false){
+                        event.preventDefault();
+                        verify.textContent="Vérifier vos informations s'il vous plaît !";
+                        verify.style.color='red';
+                }
+                }
+    
+          </script>
+
     </body>
