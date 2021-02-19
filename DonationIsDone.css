@@ -1,0 +1,23 @@
+.DonationIsDone{
+    background-color:#66CCFF;
+    padding-top: 50px;
+    color: white;
+    background-position: center;
+    background-size:contain;
+    padding: 80px;
+}
+
+.header-style-lien{
+    display: flex;
+    background-color: #5d4954;
+    height: 110px;
+    justify-content: center;
+}
+.header-style-lien h1{
+    display: flex;
+    flex: 1;
+    color:white;
+    font-size: 90px;
+    padding-left: 90px;
+    text-align: center;
+}
