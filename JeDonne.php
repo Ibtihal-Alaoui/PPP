@@ -22,7 +22,7 @@
     </header>    
     <body class="DONNER">
         <div class="container" style="width: 600px;">
-            <form method="POST" action="donationisdone.php">
+            <form method="POST" action="DonationIsDone.php">
             
                     <div class="DON">
                         <h1>JE DONNE</h1>
