@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./ASSOCIATIONC.css">
+        <title>Association</title>
+        <link rel="stylesheet" href="./Association.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         
@@ -23,7 +23,7 @@
 
     <body class="ASSOCIATION">
         <div class="containerA" style="width: 600px; margin: 30%; padding: 10%; padding-top: 5%;">
-            <form action="action_page.php">
+            <form method="POST" action="Association.php">
                     <div class="ASSO">
                         <h1>ASSOCIATION</h1>
                     </div>
@@ -59,7 +59,7 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="Entrer votre adrese email..." required="required">
+                        <input type="email" id="email" name="email" placeholder="Entrer votre adresse email..." required="required">
                     </div>
 
                     <div class="col-25">
@@ -90,6 +90,7 @@
                 var nom=document.getElementById("fname");
                 var address=document.getElementById("address");
                 var city=document.getElementById("city");
+                var email=document.getElementById("email");
                 var besoin=document.getElementById("besoin");
                 var description=document.getElementById("description");
                 var Telephone=document.getElementById("tel");
@@ -119,6 +120,10 @@
                         verify.textContent="Vérifier vos informations s'il vous plaît !";
                         verify.style.color='red';
                 }else  if(textv.test(besoin.value) == false){
+                        event.preventDefault();
+                        verify.textContent="Vérifier vos informations s'il vous plaît !";
+                        verify.style.color='red';
+                }else  if(textv.test(email.value) == false){
                         event.preventDefault();
                         verify.textContent="Vérifier vos informations s'il vous plaît !";
                         verify.style.color='red';
