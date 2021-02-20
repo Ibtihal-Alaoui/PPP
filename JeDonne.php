@@ -2,10 +2,10 @@
 <html>
 
     <head>
-        <title> Donation  </title>
+        <title>Je Donne</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="./donationisdone.css">
+        <link rel="stylesheet" href="./JeDonne.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
@@ -46,6 +46,7 @@
             $req="INSERT INTO je_donne (Nom_complet,Ville,Adresse,Téléphone,Don,Somme,Autre) values ('$Nom','$Ville','$Adresse','$Telephone','$Don',$Argent,'$Autre') ";
 
             $res=mysqli_query($conn,$req);
+            mysqli_close($conn);
 
             ?>
 
