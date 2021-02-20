@@ -26,7 +26,7 @@
         
             <p>Vôs informations sont bien enregistrées ! </p>
          <p>Merci beaucoup pour votre Don, nous allons vous contacter le prochain possible. </p>
-         <p>Retour à la page <a href="JeDonne">d'Accuiel.</a></p>
+         <p>Retour à la page <a href="index.html">d'Accuiel.</a></p>
         
         
         </div>
