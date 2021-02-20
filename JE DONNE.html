@@ -13,7 +13,7 @@
     <header class="header-style-lien">
         <div class="imagehaut">
             <a href="index.html">
-                <img src="./5e7091a9-e12a-44a1-9c84-849bf8da59b5.jpg" height="100px" width="100px">
+                <img src="./logo.jpg" height="100px" width="100px">
             </a>
         </div>
         <div class="headd">
@@ -22,7 +22,7 @@
     </header>    
     <body class="DONNER">
         <div class="container" style="width: 600px;">
-            <form action="action_page.php">
+            <form method="POST" action="DonationIsDone.php">
             
                     <div class="DON">
                         <h1>JE DONNE</h1>
@@ -53,7 +53,7 @@
                         <label for="Telephone">Téléphone</label>
                     </div>
                     <div class="col-75">
-                        <input type="tel" id="Telephone" name="Telephone" placeholder="Entrer votre numéro.." required="required">
+                        <input type="text" id="Telephone" name="Telephone" placeholder="Entrer votre numéro.." required="required">
                     </div>
                 
 
@@ -80,8 +80,8 @@
                     <label for="autre">Si autre</label>
                    </div>
                     <div class="col-75">
-                        <input type="text" id="autre" name="autre" placeholder="autre">
-                    </div>
+                        <input type="tel" id="autre" name="autre" placeholder="autre">
+                    </div> 
            
                     <div class="col-75">
                         <input type="submit" id="submit" name="submit" value="ENVOYER">
@@ -91,15 +91,17 @@
                 
             </form>
         </div>
-        <script>
+       
+         <script>
     
                 var validation = document.getElementById('submit');
                 var nom=document.getElementById("fname");
                 var city=document.getElementById("city");
                 var Telephone=document.getElementById("Telephone");
+                var argent=document.getElementById("argent");
                 var verify=document.getElementById("verify");
                 var textv=/^[a-zA-Zéèîï][a-zA-zéèîï]+([-'\s][a-zA-Zéèîï][a-zA-zéèîï]+)?/;
-                var numv=/^[1234567890]/;
+                var numv=/^[1234567890+]/;
                 validation.addEventListener('click',f_valid);
      
                 
@@ -118,9 +120,17 @@
                         event.preventDefault();
                         verify.textContent="Vérifier vos informations s'il vous plaît !";
                         verify.style.color='red';
+                }else  if(numv.test(argent.value) == false){
+                        event.preventDefault();
+                        verify.textContent="Vérifier vos informations s'il vous plaît !";
+                        verify.style.color='red';
+                
                 }
                 }
     
-          </script>
+            </script>
 
+           
+   
+        
     </body>
