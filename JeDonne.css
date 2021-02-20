@@ -57,9 +57,14 @@ input[type=tel],select,textarea{
 /*CSS pour Jedonne.php */
 .DonationIsDone{
     background-color:#66CCFF;
-    padding-top: 50px;
+    border-radius: 20px;
+    padding-top: 30px;
+    justify-content: center;
     color: white;
     background-position: center;
     background-size:contain;
-    padding: 80px;
+    padding: 30px;
+    width: 800px;
+    margin: 100px auto;
+  
 }
