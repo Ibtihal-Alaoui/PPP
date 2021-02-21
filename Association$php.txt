@@ -42,6 +42,13 @@
             $description=$_POST['description'];
            
             $req="INSERT INTO association (Nom_Complet,Ville,Adresse,Téléphone,Email,Besoin,Description) values ('$Nom','$Ville','$Adresse','$Telephone','$email','$besoin','$description') ";
+            
+            $re="SELECT * FROM je_donne";
+            $reso=$conn->query($re);
+            while($ligne=$reso->fetch_assoc()){
+                echo $ligne['Nom_complet'].' '.$ligne['Ville'].' '.$ligne['Adresse'] .'<br>';           }
+        
+            mysqli_close($conn);
 
            
            
